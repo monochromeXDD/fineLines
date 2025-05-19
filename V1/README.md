@@ -1,2 +1,3 @@
 # fineLines
 read between the lines
+this is the bare minimum but functioning protoype of the tool that im making for ALBA: this version's specifications are: 1.runs compltely local 2.uses PyMUPDF library for the extraction of text from a single test PDF. 3. splits the txt into chunks using langchain text splitters: RecursiveCharacterTextSplitter 4. uses 'nomic-embed-text' model running locally via Ollama for embedding the chunks into the locally stored dB (ChromaDB). 5. for the LLM: this employs the locally running gemma3:4b-it-qat (quantization aware 4b model) using ollmaa. 6. very basic cli-based question and response
