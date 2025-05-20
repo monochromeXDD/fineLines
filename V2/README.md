@@ -1,5 +1,6 @@
 this will be the second working (prototype for my project):
 
+16.05.2025
 objectives/expected improvements over V1:
 
 1. better dB organization
@@ -10,8 +11,18 @@ objectives/expected improvements over V1:
 4. performance enhacements
   - similar model
   - better prompt template
-  - adding a confidence metric
+  - adding a confidence metric 
   - expermenting with chunk size and overlapping
   - other unknown methods yet
 5. token streaming
 6. a workable UI using StreamLit
+
+19.05.2025
+most of the above objectives have been achieved. next objectives:
+1. add contextual memory in-chat: a back-and-forth conversational styled understanding to be able to answer follow-up questions.
+2. adding a cofidence metric (didnt add it in the previous update)
+3. further performance enhancements needed - too slow rn dawg, even with mistral-instruct-7b; maybe it's just my lazy ass laptop
+5. option for the user to download the current session chats
+6. aesthetic improvements maybe?
+
+P.S: this will all still be local
