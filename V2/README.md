@@ -26,3 +26,9 @@ most of the above objectives have been achieved. next objectives:
 6. aesthetic improvements maybe?
 
 P.S: this will all still be local
+
+22.05.2025
+1. added contextual memory: back and forth conversation styles chat
+2. confidence metric and current session chat downloaded not implemented rn
+3. created the API version of the same fineLines but emplying API for faster inference (groqAPI)
+      - too slow on local running even with QWEN3.3:0.6B (i.e, 0.6B parameters, the most lightweight and fastest i could find currently available)
