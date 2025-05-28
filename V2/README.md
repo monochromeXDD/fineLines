@@ -32,3 +32,9 @@ P.S: this will all still be local
 2. confidence metric and current session chat downloaded not implemented rn
 3. created the API version of the same fineLines but emplying API for faster inference (groqAPI)
       - too slow on local running even with QWEN3.3:0.6B (i.e, 0.6B parameters, the most lightweight and fastest i could find currently available)
+  
+28.05.2025
+1. was tasked with adding a userAuth checkpoint for enabling admin-only access of the dB.
+2. using google cloud's OIDC (OAuth2) platform (testing phase, local deployment), i am successful in implmenting authentcation but no roles-based autherization.
+3. in my observation, a fully fledged roles based authentication will be possible with a full revamp of the fineLines structure but keeping the core RAG functionalities intact.
+4. Based on this, i am now shifting my effort towards the developemnet of fineLines V3.
