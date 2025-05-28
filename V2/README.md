@@ -38,3 +38,5 @@ P.S: this will all still be local
 2. using google cloud's OIDC (OAuth2) platform (testing phase, local deployment), i am successful in implmenting authentcation but no roles-based autherization.
 3. in my observation, a fully fledged roles based authentication will be possible with a full revamp of the fineLines structure but keeping the core RAG functionalities intact.
 4. Based on this, i am now shifting my effort towards the developemnet of fineLines V3.
+
+Imp points: all further developement for fineLines will work on API based LLM inference as it is much more faster to work with, test, and can be easily scaled in the future if required.
