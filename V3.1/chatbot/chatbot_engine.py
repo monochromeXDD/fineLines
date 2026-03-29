@@ -5,10 +5,18 @@ import os
 
 def create_chatbot(department="public"):
     """Create chatbot for specific department"""
+
+    def get_groq_key():
+        key = os.getenv("GROQ_API_KEY")
+
+        if not key:
+            key = st.secrets.get("groqAPI")
+
+        return key
     
-    # Set up LLM
-    os.environ["GROQ_API_KEY"] = st.secrets["groqAPI"]
-    llm = init_chat_model("llama-3.1-8b-instant", model_provider="groq")
+    llm = ChatGroq(
+    model="llama-3.1-8b-instant",
+    api_key=get_groq_key())
     
     # Enhanced system prompt with citations
     sys_prompt = f"""You are an assistant for question-answering tasks using {department} department documents. 
