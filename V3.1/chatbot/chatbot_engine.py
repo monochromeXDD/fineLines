@@ -1,6 +1,7 @@
 import streamlit as st
 from langchain.chat_models import init_chat_model
 from database import chroma_manager
+from langchain_groq import ChatGroq
 import os
 
 def create_chatbot(department="public"):
