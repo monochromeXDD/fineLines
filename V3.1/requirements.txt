@@ -3,10 +3,8 @@ langchain
 langchain-chroma
 langchain-google-genai
 langchain-community
-groq
-streamlit-TTS
+langchain-groq
 pydub
 gtts
-hashlib
-asyncio
 PyPDF2
+streamlit-TTS
