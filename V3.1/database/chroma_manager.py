@@ -18,13 +18,15 @@ import streamlit as st
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 def get_embeddings():
-    os.environ["GOOGLE_API_KEY"] = st.secrets["geminiEmbedAPI"]
+    api_key = os.getenv("GOOGLE_API_KEY")
 
-    embeddings = GoogleGenerativeAIEmbeddings(
-        model="gemini-embedding-001"
+    if not api_key:
+        api_key = st.secrets.get("geminiEmbedAPI")
+
+    return GoogleGenerativeAIEmbeddings(
+        model="gemini-embedding-001",
+        google_api_key=api_key
     )
-
-    return embeddings
 
 def ensure_directories():
     """Ensure database directories exist"""
