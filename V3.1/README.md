@@ -1,0 +1,4 @@
+-> i missed pushing this version to git
+-> functionalities are all the same as V3 just with ALBA aesthetics for polishing
+-> updated llm inference and embedding inferences for 2026
+-> deployed on render for people to test
