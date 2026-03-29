@@ -1,0 +1,13 @@
+streamlit
+langchain
+langchain-chroma
+langchain-google-genai
+langchain-community
+groq
+streamlit-TTS
+pydub
+gtts
+sqlite3
+hashlib
+asyncio
+PyPDF2
